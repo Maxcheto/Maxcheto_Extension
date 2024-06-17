@@ -1,0 +1,37 @@
+{
+  "author": "Maxcheto",
+  "description": "Maxcheto agente remoto.",
+  "homepage_url": "https://github.com/Maxcheto/Maxcheto_Extension",
+  "manifest_version": 3,
+  "name": "Maxcheto",
+  "version": "2.1",
+  "icons": {
+    "16": "icons/icono.png",
+    "48": "icons/icono.png",
+    "128": "icons/icono.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "none.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webRequest",
+    "storage",
+    "activeTab",
+    "tabs",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ]
+}
