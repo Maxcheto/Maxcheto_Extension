@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ACCESO DENEGADO</title>
-    <style>
-      /* Estilos para hacer que el video se muestre en pantalla completa */
-      html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #video-container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="video-container">
-      <video autoplay loop>
-        <source src="/block/Page/Acceso_denegado.html.mp4" type="video/mp4">
-      </video>
-    </div>
-  </body>
+<head>
+	<title>ACCESO DENEGADO</title>
+	<style>
+		body {
+			background-color: rgb(228, 220, 209);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+		}
+		.denied-access {
+			background-color: rgb(209, 205, 199);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 50%;
+		}
+		.denied-access h1 {
+			font-size: 2.5em;
+			margin-bottom: 0.5em;
+		}
+		.denied-access p {
+			font-size: 1.2em;
+			margin-top: 0;
+			margin-bottom: 1em;
+		}
+		.denied-access .security-message {
+			font-size: 1em;
+			color: #666;
+			margin-top: 1em;
+		}
+	</style>
+</head>
+<body>
+	<div class="denied-access">
+		<h1>ACCESO DENEGADO</h1>
+		<p>No tienes permiso de acceso a la pagina solicitada</p>
+		<p class="security-message">Seguridad establecida desde Maxcheto.</p>
+	</div>
+</body>
 </html>
